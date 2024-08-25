@@ -3,7 +3,6 @@ import { onMounted } from 'vue';
 import { useCurrencyStore } from '../stores/currency';
 import { storeToRefs } from 'pinia';
 import CurrenciesTable from '../components/CurrenciesTable.vue';
-import { computed } from 'vue';
 
 const store = useCurrencyStore();
 const { currentDayCurrencies } = storeToRefs(store);
