@@ -50,7 +50,6 @@ const totalPages = computed(() => Math.ceil(filteredCurrencies.value.length / IT
   <div v-if="currencies" class="currency-table">
     <div class="filter-container">
       <SearchInput v-model.trim="filterValue" :suggestionsList="suggestions" />
-      <p>{{ filterValue }}</p>
     </div>
     <table>
       <tr>
